@@ -12,7 +12,7 @@ public class Province {
 
     private String name;
 
-    @OneToMany(targetEntity = Customer.class)
+    @OneToMany(targetEntity = Customer.class, fetch = FetchType.EAGER)
     private List<Customer> customers;
 
     public Province() {

@@ -90,19 +90,4 @@ public class ProvinceController {
         provinceService.remove(province.getId());
         return "redirect:provinces";
     }
-//
-//    @GetMapping("/view-province/{id}")
-//    public ModelAndView viewProvince(@PathVariable("id") Long id){
-//        Province province = provinceService.findById(id);
-//        if(province == null){
-//            return new ModelAndView("/error.404");
-//        }
-//
-//        Iterable<Customer> customers = customerService.findAllByProvince(province);
-//
-//        ModelAndView modelAndView = new ModelAndView("/province/view");
-//        modelAndView.addObject("province", province);
-//        modelAndView.addObject("customers", customers);
-//        return modelAndView;
-//    }
 }

@@ -27,6 +27,7 @@ Language: <a href="?lang=en">English</a> | <a href="?lang=vn">Vietnamese</a>
     <span th:text="${provinces.number + 1}"></span>/<span th:text="${provinces.totalPages}"></span>
     <a th:href="@{'/provinces'(page=${provinces.number + 1})}" th:if="${provinces.hasNext()}">Next</a>
 </div>
+<a th:href="@{/}" th:text="#{manager_customer_province}"></a>
 <footer th:replace="/province/layout :: footer"></footer>
 </body>
 </html>
